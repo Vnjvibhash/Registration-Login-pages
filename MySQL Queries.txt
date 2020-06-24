@@ -1,0 +1,9 @@
+To create data table:
+CREATE TABLE data(phish_id int(100)NOT NULL PRIMARY KEY AUTO_INCREMENT, url VARCHAR(300), phish_detail_url VARCHAR(300), submission_time VARCHAR(100), verified VARCHAR(100), verification_time VARCHAR(100), online VARCHAR(100), target VARCHAR(100));
+
+
+To load the data from csv file:
+LOAD DATA LOCAL INFILE "C:/Users/vibhu/Downloads/verified_online.csv" INTO TABLE rts_project.data FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+
+To creat userInfo table:
+CREATE TABLE userInfo(id int(10)NOT NULL PRIMARY KEY AUTO_INCREMENT, fullname varchar(20), username varchar(20), password varchar(20));
